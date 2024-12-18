@@ -38,7 +38,7 @@ public:
 		}
 
 		else{
-			par_a->par=par_a;
+			par_a->par=par_b;
 			
 		}
 	}
