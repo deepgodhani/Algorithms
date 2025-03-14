@@ -16,6 +16,7 @@ public:
 		while(ind<n){
 			bit[ind]+=num;
 			ind = ind | (ind+1);
+			//ind += (ind & -ind) one based indexing
 		}
 
 	}
@@ -25,6 +26,7 @@ public:
 		while(r>=0){
 			res+=bit[r];
 			r = ( r & (r+1) ) - 1; 
+			// r-= (r & -r); one based indexing
 		}
 		return res;
 	}
